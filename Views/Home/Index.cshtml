@@ -1,0 +1,37 @@
+﻿
+@model User
+
+ <div class="forms">
+  <div class="block1">
+
+
+<h1>Registration</h1>
+@await Html.PartialAsync("_Registro")
+  </div>
+ 
+ <div class="block2">
+
+<h1>Login</h1>
+@await Html.PartialAsync("_Login")
+</div> 
+
+@* 
+<div class="text-center">
+    <ul>
+    @foreach(User u in @Model){
+        <li> @u.FirstName @u.LastName @u.Email</li>
+        <ul>
+
+        @foreach(Transaction tran in u.ListaTransactions){
+        
+        <li>@tran.Amount</li>
+    }
+
+        </ul>
+        
+
+
+    }
+
+</ul>
+</div> *@

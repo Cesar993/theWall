@@ -1,0 +1,20 @@
+
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
+ @model Login
+<form method="POST" action="/procesa/login" class="formuLogin">
+
+        <div>
+                <label asp-for="Email">Email</label>
+                <input type="text" asp-for="Email">
+                <span asp-validation-for="Email"></span>
+        </div>
+        <div>
+                <label asp-for="Password">Password</label>
+                <input type="password" asp-for="Password">
+                <span asp-validation-for="Password"></span>
+        </div>
+
+        <button>Login</button>
+</form> 
+
